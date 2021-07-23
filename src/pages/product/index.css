@@ -1,0 +1,132 @@
+.responsive {
+  width: 100%;
+  max-width: 523px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+}
+
+.container .arrow-parent {
+  max-width: 523px;
+  display: flex;
+}
+
+.container .arrow-parent .arrow {
+  background: black;
+  width: 7%;
+  height: 48px;
+  margin: 4px;
+  position: relative;
+  bottom: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .dua h1 {
+  font-size: 46px;
+  font-family: "Ubuntu", sans-serif;
+  margin: 50px 0;
+}
+
+.container .dua h2 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container .dua span {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: line-through;
+}
+
+.container .dua p {
+  max-width: 500px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+
+.container .dua select#size {
+  font-size: 24px;
+  font-weight: 900;
+  border: none;
+  margin: 27px 0;
+}
+
+.container .dua button {
+  width: 147px;
+  height: 48px;
+  display: block;
+
+  color: white;
+  background-color: black;
+}
+
+.container .tiga {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: right;
+  box-sizing: border-box;
+  margin: 50px 0;
+}
+
+.container .tiga .shop {
+  margin-bottom: 400px;
+}
+
+.container .tiga .shop a {
+  border-right: 1px solid #e7f0f2;
+  box-sizing: border-box;
+  padding-right: 15px;
+
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.container .tiga .tiga p {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* @media only screen and (max-width: 720px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container .col {
+    height: auto;
+  }
+
+  #container #satu {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .responsive {
+    max-width: 523px;
+    width: 100%;
+    height: auto;
+  }
+
+  #dua {
+    order: 3;
+  }
+
+  #tiga {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+} */
