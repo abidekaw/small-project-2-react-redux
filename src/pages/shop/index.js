@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
-import { connect } from "react-redux";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import './index.css'
+import "./index.css";
 
-const Shop = (props) => {
+const Shop = () => {
   return (
     <Container>
       <Row>
@@ -112,15 +111,4 @@ const Shop = (props) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  products: state.productReducer.products,
-});
-
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     getTodo: () => dispatch(getProduct()),
-//     addToCart: () => dispatch(addToCart())
-//   }
-// };
-// export default Shop
-export default connect(mapStateToProps)(Shop)
+export default Shop;
