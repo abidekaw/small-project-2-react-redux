@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { addToCart, getProducts } from "../../store/actions/product";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import { withRouter } from "react-router";
 
 import "./index.css";
 import people from "./people.svg";
@@ -19,6 +20,7 @@ const Product = (props) => {
 
   const handleAddToCart = (id) => {
     props.addToCart(id)
+    props.history.push('./Cart')
     alert('Added to cart')
   };
 
@@ -50,8 +52,8 @@ const Product = (props) => {
             props.products.map((val, key) => (
               <div className="col" className="dua" key={key}>
                 <h1>{val.productName}</h1>
-                <h2>{val.discount}</h2>
-                <span>{val.price}</span>
+                <h2>${val.discount}</h2>
+                <span>${val.price}</span>
                 <p>{val.description}</p>
                 <label htmlFor="size">Size: </label>
                 <select id="size">
@@ -92,4 +94,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Product);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Product));

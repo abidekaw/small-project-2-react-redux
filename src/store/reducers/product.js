@@ -13,9 +13,9 @@ const productReducer = (state = initialState, { type, payload }) => {
         products: payload,
       };
     case ADD_TO_CARTS:
-      const carts = []
+      const carts = [];
       const findProduct = state.products.find((val) => val.id == payload);
-      carts.push(...findProduct ,)
+      carts.push({ ...findProduct, qty: 1 });
       return {
         ...state,
         cart: carts,

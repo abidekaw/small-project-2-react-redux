@@ -4,7 +4,9 @@ import Footer from "../../components/footer";
 import Header from "../../components/header";
 import "./index.css";
 
-const Cart = () => {
+const Cart = (props) => {
+  console.log(props);
+
   return (
     <Container>
       <Row>
