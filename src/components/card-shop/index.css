@@ -1,0 +1,18 @@
+.card {
+    background-color: #E7F0F24D;
+    width: 173px;
+    height: 116px;
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .card b {
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+  }

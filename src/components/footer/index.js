@@ -1,11 +1,10 @@
-import group from "./group.svg";
-import './index.css'
+import "./index.css";
 
 const Footer = () => {
   return (
     <div className="footer">
       <hr />
-      <img src={group} alt="footer" />
+      <img src="/assets/group.svg" alt="footer" />
     </div>
   );
 };

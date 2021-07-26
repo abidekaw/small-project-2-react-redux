@@ -1,20 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
 
-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 80px 0;
+.wrapper-homepage {
+  margin: 10vh;
 }
 
-header h1 {
+.navbar .title h1 {
   font-size: 60px;
 }
 
-header h1 span {
-  font-weight: 100;
-}
-
-header nav {
+.navbar .navlink {
   border-right: 1px solid rgba(0, 0, 0, 0.4);
   text-align: right;
   height: max-content;
@@ -23,62 +17,60 @@ header nav {
   padding-right: 15px;
   font-family: "Ubuntu";
 }
-header nav ul li {
+
+.navbar .navlink ul li {
   list-style: none;
 }
 
-header nav ul li a {
+.navbar .navlink ul li a {
   list-style: none;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.4);
 }
 
-.content {
+.main {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 20px 0;
 }
 
-.content aside {
-  width: 98px;
-  height: 32px;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-}
-
-.content aside a {
+.main .button button {
   font-size: 12px;
+  background-color: black;
   color: white;
   font-family: "Ubuntu";
-  align-self: center;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
 }
 
-.content .title {
-  width: 619px;
+.main .subtitle {
+  max-width: 619px;
 }
 
-.content .title h2 {
+.main .subtitle h2 {
   font-size: 36px;
   text-align: end;
   font-family: "Ubuntu";
   font-weight: 900;
 }
 
-.content .title h2 span {
+.main .subtitle h2 span {
   font-weight: 100;
 }
 
-.content .title .garis {
-  width: 241px;
+.main .subtitle .garis {
+  max-width: 241px;
   border: 1px solid #e7f0f2;
-  margin: 30px 0 15px 0;
+  margin: 30px 0;
   float: right;
 }
 
-.content .title p {
-  width: 200px;
+.main .subtitle p {
+  max-width: 200px;
   height: 56px;
   font-family: "Ubuntu";
   font-size: 12px;
@@ -87,38 +79,4 @@ header nav ul li a {
   text-align: end;
   float: right;
   clear: both;
-}
-
-.card-parent {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.card-parent .card-child {
-  width: 215px;
-  height: 114px;
-  background-color: black;
-  color: white;
-  margin-left: 50px;
-  box-sizing: border-box;
-  padding: 15px;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-}
-
-.card-parent .card-child p {
-  width: max-content;
-  height: max-content;
-  text-transform: uppercase;
-  font-size: 9px;
-  color: white;
-}
-
-.card-parent .card-child span {
-  text-transform: uppercase;
-  font-size: 7px;
-  color: white;
 }

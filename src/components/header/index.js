@@ -1,5 +1,3 @@
-import shoppingcart from "./shopping-cart.svg";
-import search from "./search.svg";
 import "./index.css";
 
 const Header = () => {
@@ -9,10 +7,15 @@ const Header = () => {
       <form>
         <input id="search" type="search" placeholder="PRODUCT" />
         <label htmlFor="search">
-          <img src={search} alt="search" />
+          <img src="/assets/search.svg" alt="search" />
         </label>
       </form>
-      <img src={shoppingcart} alt="shopingcart" width="40px" height="40px" />
+      <img
+        src="/assets/shopping-cart.svg"
+        alt="shopingcart"
+        width="40px"
+        height="40px"
+      />
     </div>
   );
 };
