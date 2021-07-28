@@ -6,6 +6,7 @@ export const getProducts = () => {
     payload: [
       {
         id: 1,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -15,6 +16,7 @@ export const getProducts = () => {
       },
       {
         id: 2,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -24,6 +26,7 @@ export const getProducts = () => {
       },
       {
         id: 3,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -33,6 +36,7 @@ export const getProducts = () => {
       },
       {
         id: 4,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -42,6 +46,7 @@ export const getProducts = () => {
       },
       {
         id: 5,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -51,6 +56,7 @@ export const getProducts = () => {
       },
       {
         id: 6,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -60,6 +66,7 @@ export const getProducts = () => {
       },
       {
         id: 7,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -69,6 +76,7 @@ export const getProducts = () => {
       },
       {
         id: 8,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -78,6 +86,7 @@ export const getProducts = () => {
       },
       {
         id: 9,
+        image: "/assets/people.svg",
         productName: "Color Item Type / Name",
         price: 39.99,
         discount: 19.99,
@@ -97,7 +106,7 @@ export const addToCart = (id) => {
 };
 
 export const getCarts = () => {
-  return{
-      type: GET_CARTS,
-  }
-}
+  return {
+    type: GET_CARTS,
+  };
+};

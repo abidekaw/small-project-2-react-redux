@@ -1,4 +1,4 @@
-export const dataProduct = [
+export const itemProduct = [
   {
     id: 1,
     image: '/assets/people.svg',
@@ -82,4 +82,4 @@ export const dataProduct = [
   },
 ];
 
-export default dataProduct
+export default itemProduct

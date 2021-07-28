@@ -1,12 +1,16 @@
 import React from "react";
+import { withRouter } from "react-router";
 import Card from '../../components/card-homepage'
 import Footer from "../../components/footer";
 import "./index.css";
 
-const Home = (props) => {
-  const handleClick = () => {
-    props.history.push('/shop')
-  }
+const Homepage = (props) => {
+  const toShop = () => {
+    props.history.push("/shop");
+  };
+  const toProduct = () => {
+    props.history.push("/product");
+  };
 
   return (
     <>
@@ -17,15 +21,15 @@ const Home = (props) => {
         </div>
         <div className="navlink">
           <ul>
-            <li> <a href="#">LATEST</a> </li>
-            <li> <a href="#">ALL</a> </li>
+            <li onClick={() => toProduct()}>LATEST</li>
+            <li onClick={() => toShop()}>ALL</li>
           </ul>
         </div>
       </div>
 
       <div className="main">
         <div className="button">
-          <button onClick={handleClick}>Shop Now</button>
+          <button onClick={() => toShop()}>Shop Now</button>
         </div>
         <div className="subtitle">
           <h2> New Concept <span>of Online Shopping</span> </h2>
@@ -41,4 +45,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default withRouter(Homepage);

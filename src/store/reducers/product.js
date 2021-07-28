@@ -1,19 +1,8 @@
-import { ADD_TO_CART, GET_PRODUCTS, GET_CARTS } from "../constants";
+import { ADD_TO_CARTS, GET_PRODUCTS, GET_CARTS } from "../constants";
 
 const initialState = {
   carts: [],
   products: [],
-  product: {
-    id: 0,
-    type: "",
-    name: "",
-    caption: "",
-    image: "",
-    priceDisc: 0,
-    priceReal: 0,
-    quantity: 0,
-    description: "",
-  },
 };
 
 const productReducer = (state = initialState, { type, payload }) => {
@@ -23,10 +12,11 @@ const productReducer = (state = initialState, { type, payload }) => {
         ...state,
         products: payload,
       };
-    case ADD_TO_CART:
-      const carts = [];
-      const findProduct = state.products.find((val) => val.id == payload);
-      carts.push({ ...findProduct});
+    case ADD_TO_CARTS:
+      const carts = state.carts;
+      const findProduct = state.products.find((val) => val.id === payload);
+      carts.push({ ...findProduct, qty: 1 });
+
       return {
         ...state,
         carts: carts,
