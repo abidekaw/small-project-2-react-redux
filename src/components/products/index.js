@@ -2,7 +2,7 @@ export const itemProduct = [
   {
     id: 1,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / satu",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -11,7 +11,7 @@ export const itemProduct = [
   {
     id: 2,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / dua",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -20,7 +20,7 @@ export const itemProduct = [
   {
     id: 3,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / tiga",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -29,7 +29,7 @@ export const itemProduct = [
   {
     id: 4,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / empat",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -38,7 +38,7 @@ export const itemProduct = [
   {
     id: 5,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / lima",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -47,7 +47,7 @@ export const itemProduct = [
   {
     id: 6,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / enam",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -56,7 +56,7 @@ export const itemProduct = [
   {
     id: 7,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / tujuh",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -65,7 +65,7 @@ export const itemProduct = [
   {
     id: 8,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / delapan",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -74,7 +74,7 @@ export const itemProduct = [
   {
     id: 9,
     image: '/assets/people.svg',
-    productName: "Color Item Type / Name",
+    productName: "Color Item Type / sembilan",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

@@ -27,6 +27,7 @@ const CardList = (props) => {
     <div className="card">
       {props.products && props.products.map((val, key) => (
         <div className="content" key={key}>
+          {/* <CardProduct product={val}></CardProduct> */}
           <img src={val.image} alt={val.productName} onClick={() => toProduct()} />
           <p>{val.productName}</p>
           <p>${val.discount}</p>

@@ -7,7 +7,7 @@ export const getProducts = () => {
       {
         id: 1,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Satu",
         price: 39.99,
         discount: 19.99,
         description:
@@ -17,7 +17,7 @@ export const getProducts = () => {
       {
         id: 2,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Dua",
         price: 39.99,
         discount: 19.99,
         description:
@@ -27,7 +27,7 @@ export const getProducts = () => {
       {
         id: 3,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Tiga",
         price: 39.99,
         discount: 19.99,
         description:
@@ -37,7 +37,7 @@ export const getProducts = () => {
       {
         id: 4,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Empat",
         price: 39.99,
         discount: 19.99,
         description:
@@ -47,7 +47,7 @@ export const getProducts = () => {
       {
         id: 5,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Lima",
         price: 39.99,
         discount: 19.99,
         description:
@@ -57,7 +57,7 @@ export const getProducts = () => {
       {
         id: 6,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Enam",
         price: 39.99,
         discount: 19.99,
         description:
@@ -67,7 +67,7 @@ export const getProducts = () => {
       {
         id: 7,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Tujuh",
         price: 39.99,
         discount: 19.99,
         description:
@@ -77,7 +77,7 @@ export const getProducts = () => {
       {
         id: 8,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Delapan",
         price: 39.99,
         discount: 19.99,
         description:
@@ -87,7 +87,7 @@ export const getProducts = () => {
       {
         id: 9,
         image: "/assets/people.svg",
-        productName: "Color Item Type / Name",
+        productName: "Color Item Type / Sembilan",
         price: 39.99,
         discount: 19.99,
         description:

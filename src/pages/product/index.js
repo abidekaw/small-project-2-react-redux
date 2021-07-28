@@ -4,7 +4,7 @@ import { withRouter } from "react-router";
 import { addToCart, getProducts } from "../../store/actions/product";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-// import itemProduct from "../../components/products/itemProduct";
+import itemProduct from "../../components/products";
 import "./index.css";
 
 const Productpage = (props) => {
@@ -13,7 +13,7 @@ const Productpage = (props) => {
     console.log(props);
   }, []);
 
-  // const product = itemProduct.find((val) => val )
+  const product = itemProduct.find(val => val )
   // console.log(product)
 
   const handleAddToCart = (id) => {
@@ -21,11 +21,6 @@ const Productpage = (props) => {
     props.history.push("./cart");
     alert("Added to cart");
   };
-
-  const product = props.product
-  console.log(product)
-
-  product.find()
 
   const toShop = () => {
     props.history.push('/shop')
@@ -37,7 +32,7 @@ const Productpage = (props) => {
     <div className="wrapper-productpage">
       <div className="left">
         <div className="img">
-          {/* <img src={product.image} alt={product.productName} className="responsive" /> */}
+          <img src={product.image} alt={product.productName} className="responsive" />
         </div>
         <div className="arrow-parent">
           <a className="arrow-child" href="#">
@@ -50,17 +45,17 @@ const Productpage = (props) => {
       </div>
 
       <div className="mid">
-        {/* <h1>{val.productName}</h1>
-        <h2>${val.discount}</h2>
-        <span>${val.price}</span>
-        <p>{val.description}</p>
+        <h1>{product.productName}</h1>
+        <h2>${product.discount}</h2>
+        <span>${product.price}</span>
+        <p>{product.description}</p>
         <label htmlFor="size">Size: </label>
         <select id="size">
-          <option>{val.size[0]}</option>
-          <option>{val.size[1]}</option>
-          <option>{val.size[2]}</option>
+          <option>{product.size[0]}</option>
+          <option>{product.size[1]}</option>
+          <option>{product.size[2]}</option>
         </select>
-        <button onClick={(id) => handleAddToCart(val.id)}>ADD TO CART</button> */}
+        <button onClick={() => handleAddToCart(product.id)}>ADD TO CART</button>
       </div>
 
       <div className="right">
@@ -72,8 +67,6 @@ const Productpage = (props) => {
         </div>
       </div>
     </div>
-    {/* {props.products && props.products.find((val, key) => (
-    ))} */}
     <Footer />
     </>
   );
@@ -96,4 +89,3 @@ const mapDispatchToProps = (dispatch) => {
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(Productpage)
 );
-// export default Productpage;

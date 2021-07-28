@@ -10,7 +10,7 @@ const Cartpage = (props) => {
   return (
     <>
     <Header />
-    <h2>Daftar Keranjang</h2>
+    <h2 style={{textAlign: 'center'}}>Daftar Keranjang</h2>
     <div className="cartstyle">
       <div className="cartlist">
         {props.carts.length < 1 ? (
