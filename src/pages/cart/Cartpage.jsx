@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 import "./index.css";
 
 const Cartpage = (props) => {
   console.log(props);
 
+  // const handleAddQty = (id, qty) => {
+  //   const data = {
+  //     id: id,
+  //     qty: qty + 1,
+  //   }
+  //   props.adjustQty(data)
+  //   console.log(props)
+  //   setRender(true)
+  // }
+  // const handleRemoveQty = (id, qty) => {
+  //   const data = {
+  //     id: id,
+  //     qty: qty - 1,
+  //   }
+  //   props.adjustQty(data)
+  //   console.log(props)
+  //   setRender(true)
+  // }
   return (
     <>
     <Header />
@@ -67,5 +85,12 @@ const mapStateToProps = (state) => {
     carts: state.productReducer.carts,
   };
 };
+
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     getProducts: () => dispatch(getProducts()),
+//     addToCart: (id) => dispatch(addToCart(id)),
+//   };
+// };
 
 export default connect(mapStateToProps, null)(Cartpage);

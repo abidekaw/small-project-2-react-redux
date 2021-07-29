@@ -5,7 +5,7 @@ import { getProducts, addToCart } from "../../store/actions/product";
 
 import "./index.css";
 
-const CardList = (props) => {
+const Cardproduct = (props) => {
   useEffect(() => {
     props.getProducts();
   }, []);
@@ -24,10 +24,9 @@ const CardList = (props) => {
   }
 
   return (
-    <div className="card">
+    <div className="cardproduct">
       {props.products && props.products.map((val, key) => (
         <div className="content" key={key}>
-          {/* <CardProduct product={val}></CardProduct> */}
           <img src={val.image} alt={val.productName} onClick={() => toProduct()} />
           <p>{val.productName}</p>
           <p>${val.discount}</p>
@@ -53,4 +52,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CardList))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Cardproduct))

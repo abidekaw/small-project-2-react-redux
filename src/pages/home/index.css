@@ -69,7 +69,7 @@
 }
 
 .main .subtitle .garis {
-  max-width: 241px;
+  width: 241px;
   border: 1px solid #e7f0f2;
   margin: 30px 0;
   float: right;
@@ -85,4 +85,9 @@
   text-align: end;
   float: right;
   clear: both;
+}
+
+.card-parent {
+  display: flex;
+  justify-content: flex-end;
 }

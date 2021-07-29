@@ -1,10 +1,10 @@
-.card {
+.cardproduct {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.card .content {
+.content {
   max-width: 300px;
   height: auto;
   margin: 10px 0;
@@ -16,18 +16,18 @@
   padding-bottom: 10px;
 }
 
-.card .content img {
+.content img {
   width: 60%;
   height: auto;
 }
 
-.card .content p {
+.content p {
   font-size: large;
   font-weight: bold;
   line-height: 0;
 }
 
-.card .content button {
+.content button {
   background: black;
   color: white;
   box-sizing: border-box;

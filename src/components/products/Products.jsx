@@ -2,7 +2,7 @@ export const itemProduct = [
   {
     id: 1,
     image: '/assets/people.svg',
-    productName: "Color Item Type / satu",
+    productName: "Color Item Type / one",
     price: 39.99,
     discount: 19.99,
     description:"Kacamata tampan dan berani Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
