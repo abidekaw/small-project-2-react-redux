@@ -3,21 +3,18 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router";
 import { getProducts, addToCart } from "../../store/actions/product";
 
-import "./index.css";
+import "./CardList.css";
 
-const Cardproduct = (props) => {
+const CardList = (props) => {
   useEffect(() => {
     props.getProducts();
-  }, []);
-
-  console.log(props)
+  },[]);
 
   const handleAddToCart = (id) => {
     props.addToCart(id)
     alert("Added to cart")
     props.history.push('/shop')
   };
-  console.log(props.history)
 
   const toProduct = () => {
     props.history.push('/product')
@@ -52,4 +49,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Cardproduct))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CardList))

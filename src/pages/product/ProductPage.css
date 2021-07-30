@@ -43,8 +43,9 @@
 
 .wrapper-productpage .mid select#size {
   font-weight: 900;
+  font-size: larger;
   border: none;
-  margin: 27px 0;
+  margin: 40px 0;
 }
 
 .wrapper-productpage .mid button {

@@ -1,7 +1,7 @@
-import "./index.css";
 import React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router";
+import "./Header.css";
 
 const Header = (props) => {
   const toCart = () => {

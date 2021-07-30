@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import "./index.css";
-import Cardproduct from "../../components/card-shoppage/Cardproduct";
+import CardList from "../../components/card-shoppage/CardList";
 import { Link } from "react-router-dom";
+import "./ShopPage.css";
 
-const Shoppage = () => {
+const ShopPage = () => {
   return (
     <>
       <Header />
@@ -21,7 +21,7 @@ const Shoppage = () => {
           </aside>
         </div>
 
-        <Cardproduct />
+        <CardList />
 
         <div className="flex-child">
           <aside id="filter">
@@ -51,4 +51,4 @@ const Shoppage = () => {
   );
 };
 
-export default Shoppage;
+export default ShopPage;

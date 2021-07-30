@@ -1,20 +1,20 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Homepage from "./pages/home/Homepage";
-import Shoppage from "./pages/shop/Shoppage";
-import Productpage from "./pages/product/Productpage";
-import Cartpage from "./pages/cart/Cartpage";
+import HomePage from "./pages/home/HomePage";
+import ShopPage from "./pages/shop/ShopPage";
+import ProductPage from "./pages/product/ProductPage";
+import CartPage from "./pages/cart/CartPage";
 import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={Homepage} />
-        <Route path="/product" component={Productpage} />
-        <Route path="/shop" component={Shoppage} />
-        <Route path="/cart" component={Cartpage} />
+        <Route path="/" exact component={HomePage} />
+        <Route path="/product" component={ProductPage} />
+        <Route path="/shop" component={ShopPage} />
+        <Route path="/cart" component={CartPage} />
         <Route component={NoMatch} />
       </Switch>
     </Router>

@@ -16,7 +16,6 @@ const productReducer = (state = initialState, { type, payload }) => {
       const carts = state.carts;
       const findProduct = state.products.find((val) => val.id === payload);
       carts.push({ ...findProduct, qty: 1 });
-
       return {
         ...state,
         carts: carts,
