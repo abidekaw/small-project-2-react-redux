@@ -10,6 +10,10 @@ const CartPage = (props) => {
     props.deleteItem(id)
   }
 
+  const handleOnChange = () => {
+
+  }
+
   return (
     <>
       <Header />
@@ -39,13 +43,13 @@ const CartPage = (props) => {
                       <td>{val.productName}</td>
                       <td>
                         <button>-</button>
-                        <input value={val.qty} />
+                        <input onChange={ () => handleOnChange() } value={val.qty} />
                         <button>+</button>
                       </td>
                       <td>${val.price}</td>
                       <td>${subtotal}</td>
                       <td>
-                        <button onClick={() => {handleDeleteItem(props.id)}}>Delete</button>
+                        <button onClick={() => handleDeleteItem(props.id)}>Delete</button>
                       </td>
                     </tr>
                   );
