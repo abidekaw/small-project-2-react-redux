@@ -1,16 +1,21 @@
 import React from "react";
 import { connect } from "react-redux";
+import { deleteItem } from "../../store/actions/product"
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import "./CartPage.css";
 
 const CartPage = (props) => {
+  const handleDeleteItem = (id) => {
+    props.deleteItem(id)
+  }
+
   return (
     <>
       <Header />
       <h2 style={{textAlign: 'center'}}>Daftar Keranjang</h2>
-      <div className="cartstyle">
-        <div className="cartlist">
+      <div className="cartstyled">
+        <div className="cartsummary">
           {props.carts.length < 1 ? (
             <h2>Cart is empty !</h2>
           ) : (
@@ -40,7 +45,7 @@ const CartPage = (props) => {
                       <td>${val.price}</td>
                       <td>${subtotal}</td>
                       <td>
-                        <button>Delete</button>
+                        <button onClick={() => {handleDeleteItem(props.id)}}>Delete</button>
                       </td>
                     </tr>
                   );
@@ -66,11 +71,12 @@ const mapStateToProps = (state) => {
   };
 };
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
+const mapDispatchToProps = (dispatch) => {
+  return {
 //     getProducts: () => dispatch(getProducts()),
 //     addToCart: (id) => dispatch(addToCart(id)),
-//   };
-// };
+    deleteItem: (id) => dispatch(deleteItem(id))
+  };
+};
 
-export default connect(mapStateToProps, null)(CartPage);
+export default connect(mapStateToProps, mapDispatchToProps)(CartPage);

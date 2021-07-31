@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, ADD_TO_CARTS, GET_CARTS } from "../constants";
+import { GET_PRODUCTS, ADD_TO_CARTS, GET_CARTS, DELETE_CART_BY_ID } from "../constants";
 
 export const getProducts = () => {
   return {
@@ -83,3 +83,10 @@ export const getCarts = () => {
     type: GET_CARTS,
   };
 };
+
+export const deleteItem = (id) => {
+  return {
+    type: DELETE_CART_BY_ID,
+    payload: id
+  }
+}
