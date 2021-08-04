@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/product" component={ProductPage} />
+        <Route path="/product/:id" component={ProductPage} />
         <Route path="/shop" component={ShopPage} />
         <Route path="/cart" component={CartPage} />
         <Route component={NoMatch} />

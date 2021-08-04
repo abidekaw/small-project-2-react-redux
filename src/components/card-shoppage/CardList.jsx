@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router";
+import { Link } from 'react-router-dom'
 import { getProducts, addToCart } from "../../store/actions/product";
 
 import "./CardList.css";
@@ -16,15 +17,19 @@ const CardList = (props) => {
     props.history.push('/shop')
   };
 
-  const toProduct = () => {
-    props.history.push('/product')
-  }
+  // const toProduct = () => {
+  //   props.history.push('/product')
+  // }
+
+  //onClick={() => toProduct()}
 
   return (
     <div className="cardproduct">
       {props.products && props.products.map((val, key) => (
         <div className="content" key={key}>
-          <img src={val.image} alt={val.productName} onClick={() => toProduct()} />
+          <Link to={`/product/${val.id}`}>
+            <img src={val.image} alt={val.productName} />
+          </Link>
           <p>{val.productName}</p>
           <p>${val.discount}</p>
           <p style={{textDecoration:'line-through'}}>${val.price}</p>
