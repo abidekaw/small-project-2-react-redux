@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { addToCart, getProducts } from "../../store/actions/product";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import "./ProductPage.css";
+import "./Product.css";
 
-const ProductPage = (props) => {
+const Product = (props) => {
   useEffect(() => {
     props.getProducts();
   }, []);
@@ -116,5 +116,5 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(ProductPage)
+  connect(mapStateToProps, mapDispatchToProps)(Product)
 );

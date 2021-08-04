@@ -1,11 +1,11 @@
 import React from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
-import CardHome from "../../components/card-homepage/CardHome";
+import Cardhome from "../../components/card-homepage/Cardhome";
 import Footer from "../../components/footer/Footer";
-import "./HomePage.css";
+import "./Home.css";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
       <div className="wrapper-homepage">
@@ -54,9 +54,9 @@ const HomePage = () => {
         </div>
 
         <div className="card-parent">
-          <CardHome title="GALLERY" subtitle="SUBTITLE" />
-          <CardHome title="ACTIVITIES" subtitle="SUBTITLE" />
-          <CardHome title="KEYNOTES" subtitle="SUBTITLE" />
+          <Cardhome title="GALLERY" subtitle="SUBTITLE" />
+          <Cardhome title="ACTIVITIES" subtitle="SUBTITLE" />
+          <Cardhome title="KEYNOTES" subtitle="SUBTITLE" />
         </div>
       </div>
       <Footer />
@@ -64,4 +64,4 @@ const HomePage = () => {
   );
 };
 
-export default withRouter(HomePage);
+export default withRouter(Home);

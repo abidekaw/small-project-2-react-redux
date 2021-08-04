@@ -1,10 +1,10 @@
-import "./CardHome.css";
+import "./Cardhome.css";
 
-const CardHome = (props) => (
+const Cardhome = (props) => (
   <div className="cardhome">
     <p>{props.title}</p>
     <span>{props.subtitle}</span>
   </div>
 );
 
-export default CardHome;
+export default Cardhome;

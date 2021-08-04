@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import { deleteItem } from "../../store/actions/product"
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import "./CartPage.css";
+import "./Cart.css";
 
-const CartPage = (props) => {
+const Cart = (props) => {
   const handleDeleteItem = (id) => {
     props.deleteItem(id)
   }
@@ -83,4 +83,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CartPage);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NoMatch = () => {
+const Nomatch = () => {
   return (
     <div>
       <h2 style={{textAlign: 'center', margin: '50px'}}>
@@ -10,4 +10,4 @@ const NoMatch = () => {
   )
 }
 
-export default NoMatch
+export default Nomatch

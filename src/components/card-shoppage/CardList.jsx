@@ -4,9 +4,9 @@ import { withRouter } from "react-router";
 import { Link } from 'react-router-dom'
 import { getProducts, addToCart } from "../../store/actions/product";
 
-import "./CardList.css";
+import "./Cardlist.css";
 
-const CardList = (props) => {
+const Cardlist = (props) => {
   useEffect(() => {
     props.getProducts();
   },[]);
@@ -54,4 +54,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CardList))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Cardlist))
