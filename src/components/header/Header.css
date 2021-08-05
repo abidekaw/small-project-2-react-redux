@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   box-sizing: border-box;
   margin-top: 25px;

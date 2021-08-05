@@ -53,11 +53,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="card-parent">
-          <Cardhome title="GALLERY" subtitle="SUBTITLE" />
-          <Cardhome title="ACTIVITIES" subtitle="SUBTITLE" />
-          <Cardhome title="KEYNOTES" subtitle="SUBTITLE" />
-        </div>
+        <Cardhome />
       </div>
       <Footer />
     </>

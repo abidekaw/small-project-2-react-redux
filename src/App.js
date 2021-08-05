@@ -5,7 +5,7 @@ import Home from "./pages/home/Home";
 import Shop from "./pages/shop/Shop";
 import Product from "./pages/product/Product";
 import Cart from "./pages/cart/Cart";
-import Nomatch from "./pages/Nomatch";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/product/:id" component={Product} />
         <Route path="/shop" component={Shop} />
         <Route path="/cart" component={Cart} />
-        <Route component={Nomatch} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   );

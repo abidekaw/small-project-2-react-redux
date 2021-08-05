@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Nomatch = () => {
+const NotFound = () => {
   return (
     <div>
       <h2 style={{textAlign: 'center', margin: '50px'}}>
@@ -10,4 +10,4 @@ const Nomatch = () => {
   )
 }
 
-export default Nomatch
+export default NotFound

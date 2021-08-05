@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import Cardlist from "../../components/card-shoppage/Cardlist";
+import Cardshop from "../../components/card-shoppage/Cardshop";
 import { Link } from "react-router-dom";
 import "./Shop.css";
 
@@ -21,7 +21,7 @@ const Shop = () => {
           </aside>
         </div>
 
-        <Cardlist />
+        <Cardshop />
 
         <div className="flex-child">
           <aside id="filter">
