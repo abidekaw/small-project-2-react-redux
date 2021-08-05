@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
-import Cardhome from "../../components/card-homepage/Cardhome";
+import Card from "../../components/card-homepage/Card";
 import Footer from "../../components/footer/Footer";
 import "./Home.css";
 
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
         </div>
 
-        <Cardhome />
+        <Card />
       </div>
       <Footer />
     </>

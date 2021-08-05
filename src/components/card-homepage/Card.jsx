@@ -1,6 +1,6 @@
-import "./Cardhome.css";
+import "./Card.css";
 
-const Cardhome = () => {
+const Card = () => {
   const listcard = [
     { title: "GALLERY", subtitle: "SUBTITLE" },
     { title: "ACTIVITIES", subtitle: "SUBTITLE" },
@@ -19,4 +19,4 @@ const Cardhome = () => {
   );
 };
 
-export default Cardhome;
+export default Card;
