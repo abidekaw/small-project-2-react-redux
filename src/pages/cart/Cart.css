@@ -7,5 +7,6 @@
   background: slategray;
   text-align: center;
   border-radius: 3px;
-  padding: 20px;
+  /* box-sizing: border-box; */
+  padding: 10px 5px;
 }

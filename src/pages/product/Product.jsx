@@ -30,7 +30,8 @@ const Product = (props) => {
     props.history.push("/cart");
   };
 
-  const product = props.products && props.products.find(val => val.id === props.match.params.id);
+  const product = props.products && props.products.find(val => val.id === parseInt(props.match.params.id));
+  // const product = props.products && props.products.find(val => val.id === props.match.params.id);
   console.log(product);
   console.log(props);
 
@@ -70,6 +71,7 @@ const Product = (props) => {
           <h1>{product && product.productName}</h1>
           <h2>${product && product.discount}</h2>
           <span>${product && product.price}</span>
+          <p>{product && product.caption}</p>
           <p>{product && product.description}</p>
           <label htmlFor="size">Size: </label>
           <select id="size">

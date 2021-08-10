@@ -36,7 +36,7 @@ const Cart = (props) => {
               </thead>
               <tbody>
                 {props.carts && props.carts.map((val, key) => {
-                  const subtotal = val.qty * val.price;
+                  const subtotal = val.qty * val.discount;
                   return (
                     <tr key={key}>
                       <td>{key + 1}</td>
@@ -46,7 +46,7 @@ const Cart = (props) => {
                         <input onChange={ () => handleOnChange() } value={val.qty} />
                         <button>+</button>
                       </td>
-                      <td>${val.price}</td>
+                      <td>${val.discount}</td>
                       <td>${subtotal}</td>
                       <td>
                         <button onClick={() => handleDeleteItem(props.id)}>Delete</button>
