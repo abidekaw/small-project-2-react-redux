@@ -1,0 +1,17 @@
+.card-parent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-home {
+  width: 215px;
+  height: 114px;
+  background-color: black;
+  color: white;
+  margin: 20px;
+  text-align: end;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 15px;
+}

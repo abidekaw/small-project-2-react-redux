@@ -1,0 +1,56 @@
+.main-shop {
+  display: flex;
+}
+
+.aside-shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+aside {
+  width: 143px;
+  height: max-content;
+  box-sizing: border-box;
+}
+
+.featured {
+  align-self: flex-end;
+  margin-left: 10px;
+  padding-left: 20px;
+  border-left: 1px solid black;
+}
+
+.filter {
+  align-self: flex-start;
+  margin-right: 10px;
+  padding-right: 20px;
+  border-right: 1px solid black;
+  text-align: right;
+}
+
+aside a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  line-height: 30px;
+}
+
+.pagination {
+  border-top: 0.5px solid black;
+  width: 446px;
+  height: 30px;
+  margin: 51px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  letter-spacing: 1em;
+  align-self: flex-end;
+}

@@ -1,48 +1,29 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  margin-top: 25px;
-}
-
-.header h2 {
-  font-size: 40px;
   cursor: pointer;
+  padding: 20px;
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
 
-.header form {
-  max-width: 200px;
+.header-left,
+.header-mid,
+.header-right {
+  color: black;
+}
+
+.header-left {
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-mid {
+  text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid black;
-}
-
-.header form input[type="search"] {
-  border: none;
-}
-
-.header form label {
-  border: none;
-}
-
-.header .keranjang {
-  display: flex;
-  align-items: center;
-  background-color: slategray;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 15px;
-  cursor: pointer;
-}
-
-.header .keranjang img {
-  width: 40px;
-  height: 40px;
-}
-
-.header .keranjang span {
-  font-size: 5vmin;
+  justify-content: space-around;
 }

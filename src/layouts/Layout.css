@@ -1,0 +1,10 @@
+.header-left,
+.header-mid,
+.header-right {
+  color: black;
+}
+
+.layout-children {
+  min-height: 80vh;
+  margin: 20px 0;
+}
